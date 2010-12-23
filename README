@@ -1,0 +1,17 @@
+#Start a line whit a sharp to put it in comment
+#Syntaxe for URL is :
+#URL|link text
+#ex :
+#http://blogmarks.net/my/new.php?mini=1&simple=1&url=|Blogmarks it !
+#if link text is not specified, the host name is used.
+#
+# Templates strings that will be replaces automatically :
+#   @@URL@@ : url of the page
+#   @@TITLE@@ : title of the page
+#   @@VIA@@ : source
+#
+# Format
+#
+# <identifier>|<site-url>|<some text or HTML code>
+FACEBOOK|http://www.facebook.com/sharer.php?t=@@TITLE@@&u=@@URL@@
+TWITTER|http://twitter.com/share?via=@@VIA@@&url=@@URL@@
