@@ -52,15 +52,16 @@ class syntax_plugin_socialpublish extends DokuWiki_Syntax_Plugin {
 	 * Connect pattern to lexer
 	 */
 	function connectTo($mode) {
-		$this->Lexer->addSpecialPattern("{{socialpublish}}",$mode,'plugin_socialpublish');
+		$this->Lexer->addSpecialPattern("{{socialpublish.*?}}",$mode,'plugin_socialpublish');
 	}
 
 	/**
 	 * Handle the match
 	 */
 	function handle($match, $state, $pos, &$handler){
+
 		return true;
-	}  
+	}
 
 	/**
 	 * Create output
